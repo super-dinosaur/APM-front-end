@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug labelme command",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "labelme",
+            "args": [
+                "/opt/anaconda3/envs/labelme/lib/python3.13/site-packages/labelme/example/data_annotated",
+                "--labels", "labels.txt",
+                "--nodata",
+                "--keep-prev",
+                "--config", "{shift_auto_shape_color: -1}"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false
+        }
+    ]
+}
